@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8">
+    </head>
+    <body onload="reset()">
+        <header>
+            <h1>Form Page</h1>
+        </header>
+        <div class="formbox">
+<div class="reg">
+</div>
+<div class="contact flex1">
+    <div class="formtime">
+        <div class="flex1">
+        <form action="#">
+                <h2 class="block">Login</h2>
+                <input class="block" type="text" placeholder="Username">
+                <input class="block" type="password" placeholder="Password">
+           <br>
+                    <button class="btn1" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="time" class="timediv">
+            <p>9:30am</p>
+        </div>
+        </div>
+</div>
+<div class="login">
+        <div class="formtime">
+                <div class="flex1">
+                <form action="#">
+                        <h2 class="block tempt">Temperature converter</h2>
+                        <input oninput="centconverter()" id="cent" class="block" type="text" placeholder="Temperature in C"><sup>o</sup>C
+                        <input oninput="fahconverter()" id="fah" class="block" type="text" placeholder="Temperature in f"><sup>o</sup>f
+                   <br>
+                    </form>
+                </div>
+                </div>      
+</div>
+</div>
+<div class="tablediv"></div>
+
+<script src="js/javascript.js"></script>
+
+    </body>
+</html>

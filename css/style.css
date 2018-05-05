@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(240, 233, 233);
+}
+header{
+    -webkit-box-shadow: 1px 1px 3px #000000;
+
+-moz-box-shadow: 1px 1px 3px #000000;
+
+box-shadow: 1px 1px 3px #000000;
+padding: 20px;
+}
+header > h1{
+    margin: 10px;
+    color: rgb(6, 6, 131);
+    font-size: 1.5em;
+}
+.formbox{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.formbox > div{
+    margin: 0px 10px;
+    text-align: center;
+}
+.flex1{
+    flex: 1;
+}
+.contact{
+    background-color: rgb(8, 8, 114);
+    padding: 15px;
+    -webkit-box-shadow: 1px 1px 11px #000000;
+
+    -moz-box-shadow: 1px 1px 11px #000000;
+    
+    box-shadow: 1px 1px 11px rgb(241, 241, 255) inset;
+}
+.formtime{
+    display: flex;
+}
+.timediv{
+    flex: 0.5;
+    text-align: center;
+}
+.timediv > p{
+    color: #fff;
+    border: solid thin #fff;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 35px;
+}
+.reg{
+    flex: 0.5;
+}
+.login{
+    flex: 0.5;
+}
+form > h2, .block > h3{
+    color: rgb(236, 165, 156);
+    text-align: center;
+}
+form > h2{
+    margin: 15px 0px !important;
+}
+label{
+    color: rgb(241, 176, 220);
+    text-align: left
+}
+.tempt{
+    color: rgb(97, 17, 6);
+}
+.block{
+    display: inline-block;
+    width: 80%;  
+    margin: 3px 0px;
+}
+.alignleft{
+    text-align: left;
+}
+.gender{
+    white-space: nowrap;
+}
+.widthtextarea{
+    width: 82%;
+}
+.widthselect{
+    width: 84%;
+}
+.flex{
+    display: flex;
+}
+.flex1{
+    display: inline-block;
+    flex: 1;
+}
+button{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: rgb(9, 9, 83);
+    border: solid thin #fff;
+    border-radius: 20px;
+    color: #fff;
+    transition: padding 1s;
+}
+button:hover{
+    background-color: rgba(211, 205, 205, 0.849);
+    border: none;
+    color: rgb(9, 9, 83);
+    padding: 10px 15px;
+}
+.btn1{
+    animation: btnmove1 2s;
+    position: relative;
+}
+@keyframes btnmove1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.flex1 label{
+    white-space: nowrap;
+}
+@media (max-width: 600px){
+    h1, h2, h3{
+        font-size: 1.1em;
+    }
+    .formbox{
+        display: block;
+        width: 100%;
+    }
+    .formbox > div{
+        width: 100%;
+        margin: 10px;
+    }
+    .contact{
+        height: 400px !important;
+    }
+    .login{
+        height: 400px !important;
+    }
+    .flex label{
+        font-size: 0.8em;
+    }
+}
+@media (min-width: 601px){
+    .centermd{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    h1, h2, h3{
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    .flex label{
+        font-size: 0.8em;
+    }
+    .reg h2{
+        white-space: normal;
+    }
+    .flex{
+        display: inline-block;
+    }
+    .flex1{
+        display: inline-block;
+    }
+}
+@media (min-width: 750px){
+    .flex{
+        display: flex;
+    }
+    
+}
+@media (min-width: 820px){
+    .centermd{
+        text-align: left;
+        font-size: 0.8em;
+    }
+}
