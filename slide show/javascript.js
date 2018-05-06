@@ -1,52 +1,58 @@
 var pictures=["images/slide1.jpg","images/slide2.jpg","images/slide3.jpg","images/slide4.jpg","images/slide5.jpg"]
+var imgslide = document.getElementById('slidediv').getElementsByTagName("img")[0];
+var slidetext1 = document.getElementById("slidetext1");
+var slidetext2 = document.getElementById("slidetext2");
+var slidetext3 = document.getElementById("slidetext3");
+var slidetext4 = document.getElementById("slidetext4");
+var slidetext5 = document.getElementById("slidetext5");
 function slide(){
-    document.getElementById('slidediv').getElementsByTagName("img")[0].src=pictures[0];
-    document.getElementsByTagName("img")[0].className = "fade1";
-    document.getElementById("slidetext1").style.display = "block";
+    imgslide.src=pictures[0];
+    imgslide.className = "fade1";
+    slidetext1.style.display = "block";
     changepic(0);
 }
 function changepic(n){
-    document.getElementById('slidediv').getElementsByTagName("img")[0].src=pictures[n%pictures.length];
+    imgslide.src=pictures[n%pictures.length];
     switch(n%pictures.length) {
         case 0:
-        document.getElementsByTagName("img")[0].className = "fade1";
-        document.getElementById("slidetext1").style.display = "block";
-        document.getElementById("slidetext2").style.display = "none";
-        document.getElementById("slidetext3").style.display = "none";
-        document.getElementById("slidetext4").style.display = "none";
-        document.getElementById("slidetext5").style.display = "none";
+        imgslide.className = "fade1";
+        slidetext1.style.display = "block";
+        slidetext2.style.display = "none";
+        slidetext3.style.display = "none";
+        slidetext4.style.display = "none";
+        slidetext5.style.display = "none";
             break;
         case 1:
-        document.getElementsByTagName("img")[0].className = "fade2";
-        document.getElementById("slidetext1").style.display = "none";
-        document.getElementById("slidetext2").style.display = "block";
-        document.getElementById("slidetext3").style.display = "none";
-        document.getElementById("slidetext4").style.display = "none";
-        document.getElementById("slidetext5").style.display = "none";
+        imgslide.className = "fade2";
+        slidetext1.style.display = "none";
+        slidetext2.style.display = "block";
+        slidetext3.style.display = "none";
+        slidetext4.style.display = "none";
+        slidetext5.style.display = "none";
             break;
         case 2:
-        document.getElementsByTagName("img")[0].className = "fade3";
-        document.getElementById("slidetext1").style.display = "none";
-        document.getElementById("slidetext2").style.display = "none";
-        document.getElementById("slidetext3").style.display = "block";
-        document.getElementById("slidetext4").style.display = "none";
-        document.getElementById("slidetext5").style.display = "none";
+        imgslide.className = "fade3";
+        slidetext1.style.display = "none";
+        slidetext2.style.display = "none";
+        slidetext3.style.display = "block";
+        slidetext4.style.display = "none";
+        slidetext5.style.display = "none";
         break;
         case 3:
-        document.getElementsByTagName("img")[0].className = "fade4";
-        document.getElementById("slidetext1").style.display = "none";
-        document.getElementById("slidetext2").style.display = "none";
-        document.getElementById("slidetext3").style.display = "none";
-        document.getElementById("slidetext4").style.display = "block";
-        document.getElementById("slidetext5").style.display = "none";
+        imgslide.className = "fade4";
+        slidetext1.style.display = "none";
+        slidetext2.style.display = "none";
+        slidetext3.style.display = "none";
+        slidetext4.style.display = "block";
+        slidetext5.style.display = "none";
         break;
         case 4:
-        document.getElementsByTagName("img")[0].className = "fade5";
-        document.getElementById("slidetext1").style.display = "none";
-        document.getElementById("slidetext2").style.display = "none";
-        document.getElementById("slidetext3").style.display = "none";
-        document.getElementById("slidetext4").style.display = "none";
-        document.getElementById("slidetext5").style.display = "block";
+        imgslide.className = "fade5";
+        slidetext1.style.display = "none";
+        slidetext2.style.display = "none";
+        slidetext3.style.display = "none";
+        slidetext4.style.display = "none";
+        slidetext5.style.display = "block";
         break;
         default:
         break;
